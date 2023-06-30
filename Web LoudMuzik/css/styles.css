@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;border: solid 0px; 
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    background-color: black;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo{width: 50%;}
+
+#portada {
+    background-image: url(../img/bannerintroduccion.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    background-size: 100%;
+    background-position: center;
+    max-width: 100%;
+
+}
+
+body {
+    background-color: black;
+}
+
+h1, h2,h3 {
+    color: deepskyblue;
+    text-align: center;
+    padding-top: 7em;
+    margin-bottom: 1em;
+}
+
+p {
+    color: white;
+    font-weight: 100;
+}
+
+.fa-bars {
+    font-size: 30px;
+}
+
+
+#menu {
+    width: 100%;
+    margin-top: 1em;
+}
+
+#menu > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu > ul > li {
+    list-style: none;
+    color: deepskyblue; ;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 0.5em;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+#menu > ul > li a {
+    list-style: none;
+    color: deepskyblue;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 0.5em;
+    transition: 0.5s;
+    transition-timing-function: linear;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.ciudades{color: deepskyblue;
+text-transform: uppercase;
+text-align: left}
+.direcciones{margin: auto;
+font-size: 0.7em;
+margin-bottom: 50px;}
+
+
+.video{width: 100%;}
+
+.opcion {
+    display: none;
+}
+
+
+main {
+    line-height: 1.8em;
+    padding: 3px;
+}
+
+section {
+    margin: auto;
+    margin-top: 1em;
+    padding:1em;
+    height: 100%;
+    padding-top: 4em;
+}
+
+
+footer {
+    background-color: deepskyblue;
+    text-align: center;
+    padding: 0.5em;
+    width: 100%;
+    
+    position: fixed;
+    bottom: 0;
+}
+
+footer > a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #111;
+}
+
+img{width:100%;}
+.productos{width: 60%;margin: auto;
+    justify-content: space-between;
+
+}
+
+.accesorios{text-align: center;
+font-size: 30px;
+padding: 0.5em;}
+
+.comprar{
+    padding: 1em;
+    text-align: center;
+    background-color: deepskyblue;
+    border-radius: 100px;
+    color: black;
+    margin-top: 1em;
+}
+
+.comprar :hover {
+    background-color: deepskyblue;
+}
+
+#mochilaverde :hover{
+display: none}
+button { background-color: deepskyblue;
+  border: none;
+  color: white;
+  padding: 7px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+width: 49%}
+p a {text-decoration: none;
+color: black}
+
+
+@media screen and (min-width: 600px) {
+    
+    .logo{width: 20%;}
+    
+    #portada{background-size: 30%;}
+    .direcciones{font-size: 1em;}
+   
+    #menu{margin-top: 1em;}
+    #menu > ul {
+        margin: auto;
+        max-width: 900px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #menu > ul > li:hover {
+        color: orange;
+    }
+
+    section {
+        margin: auto;
+        max-width: 900px;
+        padding-top: 1em;
+        margin-bottom: 30px;
+    }
+    
+
+    .opcion {
+        display: block;
+    }
+
+    #menu > ul > li:first-child {
+        display: block;
+    }
+        .productos{    max-width: 40%;}
+}
